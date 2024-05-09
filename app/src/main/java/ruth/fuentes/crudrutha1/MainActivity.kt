@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -31,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         val txtCantidad=findViewById<EditText>(R.id.txtCantidad)
         val  btnAgregar=findViewById<Button>(R.id.btnAgregar)
 
-
         //2- Programar el boton
 
         btnAgregar.setOnClickListener {
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+            // Mostrar datos
 
 
     }
